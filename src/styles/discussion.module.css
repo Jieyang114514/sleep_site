@@ -1,0 +1,11 @@
+.returnButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.textInput {
+  margin-top: 50px;
+  width: 300px;
+  padding: 10px;
+}
