@@ -30,6 +30,14 @@ export default function Home() {
         />
         <h1 className={styles.subtitleFont}>Title</h1>
         <p>
+          {" "}
+          txt txt txt txt <br />
+          txt txt txt
+          <br />
+          txt txt
+          <br />
+          txt
+          <br />
           <br />
           <Button
             className={styles.gradientButton}
