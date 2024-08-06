@@ -65,7 +65,7 @@ const PageDisplay = () => {
             src={img}
             alt="Person sleeping peacefully"
           />
-          <p>message: {message}</p>
+          <p style={{fontSize: '18px'}}>: {message}</p>
         </>
       )}
     </>

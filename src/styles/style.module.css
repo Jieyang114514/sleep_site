@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .titleFont {
@@ -19,8 +19,11 @@
 
 .subtitleFont {
   position: absolute;
-  top: -15px;
-  left: 5px;
+  /* top: -15px;
+  left: 5px; */
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 5px 10px;
   font-size: 30px;
   font-weight: bold;
@@ -29,12 +32,19 @@
 
 .imageContainer {
   position: relative;
-
+  justify-content: center;
   overflow: hidden;
+  
 }
 
 .space {
   margin-top: 400px; /* Adjust the value as needed */
+}
+
+.centerDiv {
+  display: flex;
+  justify-content: center;
+  
 }
 
 .gradientButton {
@@ -72,22 +82,28 @@
 
 .aiProfile {
   border-radius: 10rem;
-  width: 5rem;
-  height: 5rem;
+  width: 3%;
+  height: 3rem;
   position: relative;
   opacity: 0.5;
   z-index: -1;
   display: flex;
   align-items: center;
+  float: left;
 }
 .aiProfile img {
   margin-right: 10px;
 }
+
+
+
+
 .titleImg1 {
-  width: 50%;
+  width: 100%;
   height: 5rem;
   position: relative;
   display: block;
+  object-fit: cover;
   opacity: 0.5;
   z-index: -1;
 }

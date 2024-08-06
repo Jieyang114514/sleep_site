@@ -22,6 +22,9 @@ export default function Home() {
         />
         <h1 className={styles.titleFont}>Main Title</h1>
       </div>
+      <div style={{ textAlign: "center", height:'5rem' }}>
+        {/* div containing only space */}
+      </div>
       <div className={styles.imageContainer}>
         <Image
           className={styles.titleImg1}
@@ -29,7 +32,8 @@ export default function Home() {
           alt="Person sleeping peacefully"
         />
         <h1 className={styles.subtitleFont}>Title</h1>
-        <p>
+        <div style={{  height:'2rem' }}></div>
+        <p className={styles.centerDiv}>
           {" "}
           txt txt txt txt <br />
           txt txt txt
@@ -38,15 +42,17 @@ export default function Home() {
           <br />
           txt
           <br />
-          <br />
-          <Button
-            className={styles.gradientButton}
-            type="primary"
-            onClick={handleSubmit}
-          >
-            push to subpage1
-          </Button>
-        </p>
+          <br /></p>
+          <div className={styles.centerDiv}>
+            <Button
+              className={styles.gradientButton}
+              type="primary"
+              onClick={handleSubmit}
+            >
+              push to AI chat
+            </Button>
+          </div>
+        
       </div>
 
       <div className={styles.space} style={{ textAlign: "center" }}>
