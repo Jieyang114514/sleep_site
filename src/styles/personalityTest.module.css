@@ -1,0 +1,55 @@
+ 
+.title {
+text-align: center;
+margin-bottom: 20px; 
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+min-height: 40%;
+margin: 3rem;
+
+}
+
+.multipleChoice1, .multipleChoice2, .multipleChoice3{
+    
+    height: 30rem;
+    width: 20rem;
+    border-radius: 2rem; 
+    position: absolute;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    float: left;
+    cursor: pointer;
+    border: 2px solid #404040;
+    
+}
+
+
+.multipleChoice1{
+    left: 25%;
+}
+
+.multipleChoice2{
+    left: 50%;
+}
+
+.multipleChoice3{
+    left: 75%;
+}
+
+
+.multipleChoice1:hover, .multipleChoice2:hover, .multipleChoice3:hover {
+    transform: translate(-50%, -52%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+.answearPolice{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem; /* Adjust font size as needed */
+    font-weight: bold;
+   
+}

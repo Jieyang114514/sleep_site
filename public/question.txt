@@ -1,0 +1,5 @@
+1.	You see a friend struggling with a difficult task. Do you: 
+a) Offer immediate help and guidance. 
+b) Ask if they need anything and offer support. 
+c) Continue what you were doing, assuming they'll ask for help if needed. 
+d) Feel slightly annoyed at the interruption.
