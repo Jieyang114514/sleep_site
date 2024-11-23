@@ -1,18 +1,15 @@
-
-// note modified
-
 "use client";
 import React, { useState, useEffect, useContext } from "react";
 import { useRouter } from "next/navigation";
-import { openai } from "../util/open-ai-util";
+import { openai } from "../../util/open-ai-util";
 import { Button, Spin, Input } from "antd";
 import styles from "@/styles/style.module.css";
 import Image from "next/image";
-import img from "../../../public/img.jpg";
+import img from "../../../../public/img.jpg";
 
 const PageDisplay = () => {
   const [prompt, setPrompt] = useState("");
-  const [loadings, setLoadings] = useState(false);
+  const [loadings, setLoadings] = useState(false); 
   const [message, setMessage] = useState("");
 
   const handleInputChange = (value) => {

@@ -10,10 +10,11 @@ const PageDisplay = () => {
     useEffect(() => {
         const handle = setTimeout(() => {
             setIsTimePassed(true);
+           
             if (isTimePassed) {
-                router.push("/show_result/show_result1");
+                router.push("/examPredict/examPredict1");
             }
-        }, 1600);
+        }, 5800);
 
         return () => clearTimeout(handle);
     }, [isTimePassed]); // Added dependency array to fix stale closure
@@ -22,8 +23,9 @@ const PageDisplay = () => {
         localStorage.clear();
         router.push("/popularity");
     };
+
     const handleContinue = () => {
-        router.push("/show_result/show_result1");
+        router.push("/examPredict/examPredict1");
     }
 
    
@@ -40,7 +42,7 @@ const PageDisplay = () => {
                 <iframe
                     width={1500}
                     height={800}
-                    src="https://www.youtube.com/embed/y5HTMMmEkGc?autoplay=1"
+                    src="https://www.youtube.com/embed/eRJohwL9brw?autoplay=1"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -64,7 +66,6 @@ const PageDisplay = () => {
                 </Button>
             </div>
            
-        
         </>
     );
 };
