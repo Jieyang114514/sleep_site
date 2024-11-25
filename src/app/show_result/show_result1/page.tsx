@@ -70,9 +70,9 @@ const PageDisplay = () => {
                     <br/>
                     <p className={styles.description}>{messageSuggestion}</p>
                     <p className={styles.description}>Historic answer:</p>
-                    <p className={styles.description}>{answerRegister['1']}</p>
-                    <p className={styles.description}>{answerRegister['2']}</p>
-                    <p className={styles.description}>{answerRegister['3']}</p>
+                    <p className={styles.description}>{answerRegister['1'].slice(0, -1)}</p>
+                    <p className={styles.description}>{answerRegister['2'].slice(0, -1)}</p>
+                    <p className={styles.description}>{answerRegister['3'].slice(0, -1)}</p>
                 </div>
             </div>
         </>

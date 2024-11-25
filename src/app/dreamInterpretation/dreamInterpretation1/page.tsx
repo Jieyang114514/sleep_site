@@ -5,7 +5,7 @@ import { openai } from "../../util/open-ai-util";
 import { Button, Spin, Input } from "antd";
 import styles from "@/styles/style.module.css";
 import Image from "next/image";
-import img from "../../../../public/Exam bot.jpg";
+import img from "../../../../public/Dream bot icon.jpg";
 // import video from "../../../public/test_video1.mp4";
 
 const PageDisplay = () => {
@@ -15,18 +15,11 @@ const PageDisplay = () => {
   const [message, setMessage] = useState("");
   const [isFirstUse, setIsFirstUse] = useState(true);
 
-  const dreamInterpreterPrompt = ` predict how well the user will do on his upcoming exam
-  consider:
-Hours studied this week? 
-Course material covered? (rough %)
-How confident are you? (1-10)
-Have you done practice questions? (Y/N)
-Based on the answers,  share:
-the likely score 
-What is already doing great at
-One quick tip to boost the score even higher 
-Remember: answer while being optimistic and encouraging
-
+  const dreamInterpreterPrompt = `You are a dream interpreter with deep insight into the subconscious realm. 
+  Your role is to analyze the dreams that users describe to you and provide interpretations of their hidden meanings. 
+5. Connect the dream's symbolism to the user's possible waking life situations or emotions.
+6. Offer guidance or suggestions after maximum 2 prompts
+Use mystical and intuitive language in your response.
 `;
 
   const handleInputChange = (value) => {
@@ -78,7 +71,7 @@ Remember: answer while being optimistic and encouraging
         className={styles.divBottomCenter}
         type="text"
         value={prompt}
-        placeholder="Describe your latest study here..."
+        placeholder="Describe your recent dream here..."
         onChange={(e) => handleInputChange(e.target.value)}
         onKeyDown={(e) => {
           if (e.key === 'Enter') {

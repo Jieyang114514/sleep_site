@@ -34,14 +34,14 @@ const PageDisplay = () => {
 
   const router = useRouter();
 
-  const handleSubmitChatbot = () => {
-    setIfReturn(true);
-    router.push("/chatbot");
-  };
-
   const handleSubmitExam = () => {
     setIfReturn(true);
     router.push("/examPredict");
+  };
+
+  const handleSubmitDream = () => {
+    setIfReturn(true);
+    router.push("/dreamInterpretation");
   };
 
   const handleSubmitPopularity = () => {
@@ -96,7 +96,7 @@ const PageDisplay = () => {
 
 
 
-            <div className={styles['card'+(scale+0).toString()]  ? styles['card'+(scale+0).toString()] : styles['emptyCard']}
+<div className={styles['card'+(scale+0).toString()]  ? styles['card'+(scale+0).toString()] : styles['emptyCard']}
               style={{
                 transition: `transform ${topSpeed}s ease-in-out`
               }}
@@ -222,7 +222,7 @@ const PageDisplay = () => {
                         style={{backgroundColor:`#${color3}`}}
                         className={styles.gradientButton}
                         type="primary"
-                        onClick={handleSubmitChatbot}
+                        onClick={handleSubmitDream}
                       >
                         Unlock the hidden meanings in my dreams
                       </Button>
@@ -256,25 +256,25 @@ const PageDisplay = () => {
                     alt="Person sleeping peacefully"
                     
                   />
-                  <h1 className={styles.subtitleFont}>Title</h1>
+                  <h1 className={styles.subtitleFont}>Coming soon</h1>
                   {/* <div style={{  height:'2rem' }}></div> */}
                   <p className={styles.presentation}>
                     {" "}
-                    txt txt txt txt <br />
-                    txt txt txt
+                    We're working hard to bring you something amazing! <br />
+                     
                     <br />
-                    txt txt
+                     
                     <br />
-                    txt
+                     
                     </p>
                     <div className={styles.centerDiv}>
                       <Button
                         style={{backgroundColor:`#${color2}`}}
                         className={styles.gradientButton}
                         type="primary"
-                        onClick={handleSubmitChatbot}
+                        
                       >
-                        try our dream interpretetion bot
+                      Coming soon                    
                       </Button>
                     </div>
                   
@@ -305,25 +305,25 @@ const PageDisplay = () => {
                     alt="Person sleeping peacefully"
                     
                   />
-                  <h1 className={styles.subtitleFont}>Title</h1>
+                  <h1 className={styles.subtitleFont}>Coming soon</h1>
                   {/* <div style={{  height:'2rem' }}></div> */}
                   <p className={styles.presentation}>
                     {" "}
-                    txt txt txt txt <br />
-                    txt txt txt
+                    We're working hard to bring you something amazing. <br />
+                    
                     <br />
-                    txt txt
+                    
                     <br />
-                    txt
+                    
                     </p>
                     <div className={styles.centerDiv}>
                       <Button
                         style={{backgroundColor:`#${color1}`}}
                         className={styles.gradientButton}
                         type="primary"
-                        onClick={handleSubmitChatbot}
+                        
                       >
-                        try our dream interpretetion bot
+                        Coming soon
                       </Button>
                     </div>
                   
