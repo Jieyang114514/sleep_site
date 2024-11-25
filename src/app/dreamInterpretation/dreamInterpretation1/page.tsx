@@ -19,8 +19,7 @@ const PageDisplay = () => {
   Your role is to analyze the dreams that users describe to you and provide interpretations of their hidden meanings. 
 5. Connect the dream's symbolism to the user's possible waking life situations or emotions.
 6. Offer guidance or suggestions after maximum 2 prompts
-Use mystical and intuitive language in your responses 
-
+Use mystical and intuitive language in your response.
 `;
 
   const handleInputChange = (value) => {
